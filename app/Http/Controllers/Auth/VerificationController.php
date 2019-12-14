@@ -25,7 +25,7 @@ class VerificationController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -34,8 +34,14 @@ class VerificationController extends Controller
      */
     public function __construct()
     {
+        // 设定了所有的控制器动作都需要登录后才能访问
         $this->middleware('auth');
+
+        //
         $this->middleware('signed')->only('verify');
+
+        //对 verify 和 resend 动作做了频率限制,throttle 中间件是框架提供的访问频率限制功能， throttle 中间 件会接收两个参数，
+        //这两个参数决定了在给定的分钟数内可以进行的最大请求数。限定了这两个动作 访问频率是 1 分钟内不能超过 6 次
         $this->middleware('throttle:6,1')->only('verify', 'resend');
     }
 }
