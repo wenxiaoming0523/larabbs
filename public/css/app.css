@@ -17353,35 +17353,42 @@ body {
   padding: 3px;
 }
 
-.register-page .topics-index-page .topic-list {
+.register-page .topics-index-page .topic-list,
+.register-page .categories-show-page .topic-list {
   margin-bottom: 100px;
 }
 
-.register-page .topics-index-page .topic-list .nav > li > a {
+.register-page .topics-index-page .topic-list .nav > li > a,
+.register-page .categories-show-page .topic-list .nav > li > a {
   position: relative;
   display: block;
   padding: 5px 14px;
   font-size: 0.9em;
 }
 
-.register-page .topics-index-page .topic-list a {
+.register-page .topics-index-page .topic-list a,
+.register-page .categories-show-page .topic-list a {
   color: #444444;
 }
 
-.register-page .topics-index-page .topic-list .meta {
+.register-page .topics-index-page .topic-list .meta,
+.register-page .categories-show-page .topic-list .meta {
   font-size: 0.9em;
   color: #b3b3b3;
 }
 
-.register-page .topics-index-page .topic-list .meta a {
+.register-page .topics-index-page .topic-list .meta a,
+.register-page .categories-show-page .topic-list .meta a {
   color: #b3b3b3;
 }
 
-.register-page .topics-index-page .topic-list .badge {
+.register-page .topics-index-page .topic-list .badge,
+.register-page .categories-show-page .topic-list .badge {
   background-color: #d8d8d8;
 }
 
-.register-page .topics-index-page .topic-list hr {
+.register-page .topics-index-page .topic-list hr,
+.register-page .categories-show-page .topic-list hr {
   margin-top: 12px;
   margin-bottom: 12px;
   border: 0;
