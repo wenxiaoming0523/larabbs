@@ -114,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_17_085321_send_categraies_data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state relative-caret-position="343">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#7#45#0#PHP" expanded="true" />
               </folding>
@@ -431,12 +431,12 @@
       <option name="presentableId" value="Default" />
       <updated>1576158273544</updated>
       <workItem from="1576158276136" duration="956000" />
-      <workItem from="1576219619749" duration="30411000" />
+      <workItem from="1576219619749" duration="30884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31367000" />
+    <option name="totallyTimeSpent" value="31840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1674" height="953" extended-state="0" />
@@ -876,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_17_085321_send_categraies_data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state relative-caret-position="343">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#7#45#0#PHP" expanded="true" />
           </folding>
