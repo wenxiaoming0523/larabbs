@@ -30,6 +30,11 @@ return [
         'secret' => env('SPARKPOST_SECRET'),
     ],
 
+    'baidu_translate' => [
+        'appid' => env('BAIDU_TRANSLATE_APPID'),
+        'key'   => env('BAIDU_TRANSLATE_KEY'),
+    ],
+
     'stripe' => [
         'model' => App\Models\User::class,
         'key' => env('STRIPE_KEY'),
