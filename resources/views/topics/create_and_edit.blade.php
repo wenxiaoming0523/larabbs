@@ -2,6 +2,23 @@
 
 @section('content')
 
+@section('styles')
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/simditor.css') }}">
+@stop
+@section('scripts')
+  <script type="text/javascript" src="{{asset('jquery.min.js')}}"></script>
+  <script type="text/javascript" src="{{ asset('js/module.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/hotkeys.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/uploader.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/simditor.js') }}"></script>
+  <script>
+    $(document).ready(function() {
+      var editor = new Simditor({
+        textarea: $('#editor'),
+      }); });
+  </script>
+@stop
+
 <div class="container">
   <div class="col-md-10 offset-md-1">
     <div class="card ">
@@ -37,6 +54,7 @@
                 </div>
 
               <div class="form-group">
+                <label for="body-field">分类</label>
               <select class="form-control" name="category_id" required>
                 <option value="" hidden disabled selected>请选择分类</option>
                 @foreach ($categories as $value)
@@ -45,10 +63,10 @@
               </select>
             </div>
 
-                <div class="form-group">
-                	<label for="body-field">Body</label>
-                	<textarea name="body" id="body-field" class="form-control" rows="6" placeholder="至少输入3个字符">{{ old('body', $topic->body ) }}</textarea>
-                </div>
+            <div class="form-group">
+                	<label for="body-field">内容</label>
+                	<textarea name="body" id="editor" class="form-control" rows="6" placeholder="至少输入3个字符">{{ old('body', $topic->body ) }}</textarea>
+            </div>
 
 
           <div class="well well-sm">
