@@ -17345,6 +17345,7 @@ body {
 .register-page {
   /* Topic Index Page */
   /* Topic Show Page */
+  /* 回复列表 */
 }
 
 .register-page img.captcha {
@@ -17860,5 +17861,14 @@ body {
   margin: 0.4em auto 0.6em;
   font-size: 28px;
   line-height: 38px;
+}
+
+.register-page .topic-reply a {
+  color: inherit;
+}
+
+.register-page .topic-reply .meta {
+  font-size: 0.9em;
+  color: #b3b3b3;
 }
 
